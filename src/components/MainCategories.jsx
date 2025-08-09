@@ -1,29 +1,34 @@
-import { Link } from "react-router"
+import { Link } from "react-router-dom"
 
 const MainCategories = () => {
     return (
-        <div className='hidden md:flex bg-white rounded-3xl xl:rounded-full p-4 shadow-lg items-center justify-center gap-8'>
+        <div className='hidden md:flex bg-white rounded-3xl xl:rounded-full p-4 shadow-lg items-center justify-center gap-4'>
             {/*Links*/}
             <div className="flex-1 flex items-center justify-between flex-wrap">
                 <Link to="/posts" className="bg-blue-800 text-white rounded-full px-4 py-2">
                     All Posts
                 </Link>
-                <Link to="/posts?cat=web-design" className="hover:bg-blue-100 rounded-full px-4 py-2">
-                    Web Design
+                <Link to="/posts?cat=web-design" className="hover:bg-blue-100 rounded-full px-2 py-2">
+                    <b>Web Design</b>
                 </Link>
-                <Link to="/posts" className="hover:bg-blue-100 rounded-full px-4 py-2">
-                    Development
+                 
+                <Link to="/posts" className="hover:bg-blue-100 rounded-full px-2 py-2">
+                    <b>Development </b>
                 </Link>
-                <Link to="/posts" className="hover:bg-blue-100 rounded-full px-4 py-2">
-                    Databases
+                
+                <Link to="/posts" className="hover:bg-blue-100 rounded-full px-2 py-2">
+                    <b>Databases</b>
                 </Link>
-                <Link to="/posts" className="hover:bg-blue-100 rounded-full px-4 py-2">
-                    Search Engines
+                 
+                <Link to="/posts" className="hover:bg-blue-100 rounded-full px-2 py-2">
+                    <b>Search Engines </b>
                 </Link>
-                <Link to="/posts" className="hover:bg-blue-100 rounded-full px-4 py-2">
-                    Marketing
-                </Link>
+                
+                <Link to="/posts" className="hover:bg-blue-100 rounded-full px-2 py-2">
+                   <b>Marketing</b>
+                </Link>        
             </div>
+           
             <span className="text-xl font-medium">|</span>
             {/*search*/}
             <div className="bg-gray-100 p-2 rounded-full flex items-center gap-2">
