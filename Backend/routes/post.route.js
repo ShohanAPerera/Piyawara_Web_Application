@@ -4,12 +4,10 @@ import { getPosts, getPost, createPost, deletePost } from '../controllers/post.c
 
 const router = express.Router();
 
-// Public routes
+
 router.get('/', getPosts);
 router.get('/:slug', getPost);
-
-// Protected routes
-router.post('/posts', requireAuth(), createPost);
-router.delete('/:id', requireAuth(), deletePost);
+router.post('/',createPost);
+router.delete('/:id',deletePost);
 
 export default router;
